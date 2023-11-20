@@ -1,0 +1,1 @@
+/var/www/html/app/code/Blueskytechco/Themeoption/view/adminhtml/web/js/jscolor.js

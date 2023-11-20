@@ -1,0 +1,1 @@
+/var/www/html/app/code/Blueskytechco/LayeredAjax/view/frontend/web/js/layeredajax.js

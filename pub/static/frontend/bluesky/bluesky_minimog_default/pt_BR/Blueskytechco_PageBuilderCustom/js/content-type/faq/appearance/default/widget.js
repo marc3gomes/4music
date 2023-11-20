@@ -1,0 +1,1 @@
+/var/www/html/app/code/Blueskytechco/PageBuilderCustom/view/base/web/js/content-type/faq/appearance/default/widget.js

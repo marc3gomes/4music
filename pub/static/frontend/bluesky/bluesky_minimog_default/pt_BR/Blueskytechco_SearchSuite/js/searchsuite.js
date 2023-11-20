@@ -1,0 +1,1 @@
+/var/www/html/app/code/Blueskytechco/SearchSuite/view/frontend/web/js/searchsuite.js

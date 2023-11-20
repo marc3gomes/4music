@@ -1,0 +1,1 @@
+/var/www/html/vendor/frenet/frenet-magento2/view/frontend/web/js/view/shipping-rates-validation/frenetshipping.js

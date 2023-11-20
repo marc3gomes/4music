@@ -1,0 +1,1 @@
+/var/www/html/app/code/Blueskytechco/MenuBuilder/view/frontend/web/js/components/horizontalmenu.js

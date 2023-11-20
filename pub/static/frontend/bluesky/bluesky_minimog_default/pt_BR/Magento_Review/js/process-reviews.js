@@ -1,0 +1,1 @@
+/var/www/html/app/design/frontend/bluesky/bluesky_default/Magento_Review/web/js/process-reviews.js

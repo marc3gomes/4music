@@ -1,0 +1,1 @@
+/var/www/html/app/design/frontend/bluesky/bluesky_minimog_default/Magento_Theme/web/js/theme.js

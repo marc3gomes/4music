@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">    <body>
+        <referenceBlock name="checkout.root">
+            <arguments>
+                <argument name="jsLayout" xsi:type="array">
+                    <item name="components" xsi:type="array">
+                        <item name="checkout" xsi:type="array">
+                            <item name="children" xsi:type="array">
+                                <item name="sidebar" xsi:type="array">
+                                    <item name="children" xsi:type="array">
+                                        <item name="customer-email" xsi:type="array">
+                                            <item name="component" xsi:type="string">PayPalBR_PayPal/js/view/form/element/email</item>
+                                            <item name="displayArea" xsi:type="string">customer-email</item>
+                                            <item name="config" xsi:type="array">
+                                                <item name="template" xsi:type="string">PayPalBR_PayPal/form/element/email</item>
+                                            </item>
+                                        </item>
+                                        <item name="summary" xsi:type="array">
+                                            <item name="children" xsi:type="array">
+                                                <item name="totals" xsi:type="array">
+                                                    <item name="children" xsi:type="array">
+                                                        <item name="processing_fee_paypal" xsi:type="array">
+                                                            <item name="component" xsi:type="string">PayPalBR_PayPal/js/view/checkout/cart/totals/processing-fee-paypal</item>
+                                                            <item name="sortOrder" xsi:type="string">20</item>
+                                                            <item name="config" xsi:type="array">
+                                                                <item name="template" xsi:type="string">PayPalBR_PayPal/checkout/cart/totals/processing-fee-paypal</item>
+                                                                <item name="title" xsi:type="helper" helper="PayPalBR\PayPal\Helper\Installment::getTitle"/>
+                                                            </item>
+                                                        </item>
+                                                        <item name="customerbalance" xsi:type="array">
+                                                            <item name="component"  xsi:type="string">PayPalBR_PayPal/js/view/summary/customer-balance</item>
+                                                            <item name="config" xsi:type="array">
+                                                                <item name="title" translate="true" xsi:type="string">Store Credit</item>
+                                                            </item>
+                                                            <item name="sortOrder" xsi:type="string">95</item>
+                                                        </item>
+                                                    </item>
+                                                </item>
+                                                <item name="cart_items" xsi:type="array">
+                                                    <item name="children" xsi:type="array">
+                                                        <item name="details" xsi:type="array">
+                                                            <item name="children" xsi:type="array">
+                                                                <item name="subtotal" xsi:type="array">
+                                                                    <item name="component" xsi:type="string">Magento_Tax/js/view/checkout/summary/item/details/subtotal</item>
+                                                                </item>
+                                                            </item>
+                                                        </item>
+                                                    </item>
+                                                </item>
+                                            </item>
+                                        </item>
+                                    </item>
+                                </item>
+                                <item name="steps" xsi:type="array">
+                                    <item name="children" xsi:type="array">
+                                        <item name="billing-step" xsi:type="array">
+                                            <item name="component" xsi:type="string">uiComponent</item>
+                                            <item name="children" xsi:type="array">
+                                                <item name="payment" xsi:type="array">
+                                                    <item name="children" xsi:type="array">
+                                                        <item name="renders" xsi:type="array">
+                                                            <!-- merge payment method renders here -->
+                                                            <item name="children" xsi:type="array">
+                                                                <item name="paypal-br" xsi:type="array">
+                                                                    <item name="component" xsi:type="string">PayPalBR_PayPal/js/view/payment/paypal-br</item>
+                                                                    <item name="methods" xsi:type="array">
+                                                                        <item name="paypalbr_paypalplus" xsi:type="array">
+                                                                            <item name="isBillingAddressRequired" xsi:type="boolean">true</item>
+                                                                        </item>
+                                                                        <item name="paypalbr_expresscheckout" xsi:type="array">
+                                                                            <item name="isBillingAddressRequired" xsi:type="boolean">false</item>
+                                                                        </item>
+                                                                    </item>
+                                                                </item>
+                                                            </item>
+                                                        </item>
+                                                        <item name="afterMethods" xsi:type="array">
+                                                            <item name="children" xsi:type="array">
+                                                                <item name="storeCredit" xsi:type="array">
+                                                                    <item name="component" xsi:type="string">PayPalBR_PayPal/js/view/payment/customer-balance</item>
+                                                                </item>
+                                                            </item>
+                                                        </item>
+                                                    </item>
+                                                </item>
+                                            </item>
+                                        </item>
+                                    </item>
+                                </item>
+
+                            </item>
+                        </item>
+                        <item name="installment-cost-buyer" xsi:type="array">
+                            <item name="component" xsi:type="string">PayPalBR_PayPal/js/view/payment/installment</item>
+                        </item>
+                    </item>
+                </argument>
+            </arguments>
+        </referenceBlock>
+        <referenceContainer name="content">
+            <block class="PayPalBR\PayPal\Block\Checkout\OSC" name="osc" template="PayPalBR_PayPal::checkout/osc.phtml" />
+        </referenceContainer>
+    </body>
+</page>

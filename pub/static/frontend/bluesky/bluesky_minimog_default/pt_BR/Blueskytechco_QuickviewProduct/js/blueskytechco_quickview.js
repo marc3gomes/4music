@@ -1,0 +1,1 @@
+/var/www/html/app/code/Blueskytechco/QuickviewProduct/view/frontend/web/js/blueskytechco_quickview.js

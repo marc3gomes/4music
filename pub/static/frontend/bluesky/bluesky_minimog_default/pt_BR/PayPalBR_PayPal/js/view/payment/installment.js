@@ -1,0 +1,1 @@
+/var/www/html/vendor/br-paypaldev/magento2-module/view/frontend/web/js/view/payment/installment.js

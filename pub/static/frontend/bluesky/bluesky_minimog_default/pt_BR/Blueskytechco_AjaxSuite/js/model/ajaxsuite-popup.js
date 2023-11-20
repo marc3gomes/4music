@@ -1,0 +1,1 @@
+/var/www/html/app/code/Blueskytechco/AjaxSuite/view/frontend/web/js/model/ajaxsuite-popup.js

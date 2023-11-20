@@ -1,0 +1,53 @@
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+/* link color */
+/* Breacrumbs background */
+.hidden {
+  display: none;
+}
+.w-max-45 {
+  max-width: 45% !important;
+}
+.color_primary {
+  color: var(--theme__color__primary, #56cfe1);
+}
+.color_heading {
+  color: var(--heading__color__base, #000000);
+}
+@media screen {
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans/light/opensans-300.woff2') format('woff2'), url('../fonts/opensans/light/opensans-300.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans/regular/opensans-400.woff2') format('woff2'), url('../fonts/opensans/regular/opensans-400.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans/semibold/opensans-600.woff2') format('woff2'), url('../fonts/opensans/semibold/opensans-600.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans/bold/opensans-700.woff2') format('woff2'), url('../fonts/opensans/bold/opensans-700.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  .items {
+    margin: 0;
+    padding: 0;
+    list-style: none none;
+  }
+}

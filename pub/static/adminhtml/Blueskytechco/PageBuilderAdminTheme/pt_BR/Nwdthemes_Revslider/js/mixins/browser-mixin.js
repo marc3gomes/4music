@@ -1,0 +1,1 @@
+/var/www/html/app/code/Nwdthemes/Revslider/view/adminhtml/web/js/mixins/browser-mixin.js

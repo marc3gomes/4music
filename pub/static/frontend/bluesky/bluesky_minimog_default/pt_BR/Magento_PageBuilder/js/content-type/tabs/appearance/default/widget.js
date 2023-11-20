@@ -1,0 +1,1 @@
+/var/www/html/app/design/frontend/bluesky/bluesky_default/Magento_PageBuilder/web/js/content-type/tabs/appearance/default/widget.js

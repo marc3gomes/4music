@@ -1,0 +1,1 @@
+/var/www/html/app/code/Blueskytechco/PageBuilderCustom/view/base/web/js/resource/isotope/isotope.pkgd.js

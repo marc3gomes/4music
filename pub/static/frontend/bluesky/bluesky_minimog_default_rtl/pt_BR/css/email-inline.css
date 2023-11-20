@@ -1,0 +1,591 @@
+@import url("{{base_url_path}}frontend/bluesky/bluesky_minimog_default_rtl/{{locale}}/css/email-fonts.css");
+/* link color */
+/* Breacrumbs background */
+.hidden {
+  display: none;
+}
+.w-max-45 {
+  max-width: 45% !important;
+}
+.color_primary {
+  color: var(--theme__color__primary, #56cfe1);
+}
+.color_heading {
+  color: var(--heading__color__base, #000000);
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+img {
+  border: 0;
+  height: auto;
+  line-height: 100%;
+  outline: none;
+  text-decoration: none;
+}
+table {
+  border-collapse: collapse;
+}
+table td {
+  vertical-align: top;
+}
+html {
+  font-size: 62.5%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-size-adjust: 100%;
+}
+body {
+  color: var(--text__color, #666666);
+  font-family: var(--font-family-name__base, 'Open Sans'), 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: var(--font-weight__regular, 400);
+  line-height: 1.75;
+  font-size: 16px;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+abbr[title] {
+  border-bottom: 1px dotted var(--border-color__base, #eeeeee);
+  cursor: help;
+}
+b,
+strong {
+  font-weight: 700;
+}
+em,
+i {
+  font-style: italic;
+}
+mark {
+  background: #ffffff;
+  color: var(--heading__color__base, #000000);
+}
+small,
+.small {
+  font-size: 12px;
+}
+hr {
+  border: 0;
+  border-top: 1px solid var(--border-color__base, #eeeeee);
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+sub,
+sup {
+  font-size: 68.75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -.5em;
+}
+sub {
+  bottom: -.25em;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  color: var(--heading__color__base, #000000);
+  font-family: var(--heading__font-family__base, false);
+  font-weight: var(--heading__font-weight__base, 600);
+  line-height: 1.1;
+  font-size: 45px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+h2 {
+  color: var(--heading__color__base, #000000);
+  font-family: var(--heading__font-family__base, false);
+  font-weight: var(--heading__font-weight__base, 600);
+  line-height: 1.1;
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+h3 {
+  color: var(--heading__color__base, #000000);
+  font-family: var(--heading__font-family__base, false);
+  font-weight: var(--heading__font-weight__base, 600);
+  line-height: 1.1;
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 17px;
+}
+h4 {
+  color: var(--heading__color__base, #000000);
+  font-family: var(--heading__font-family__base, false);
+  font-weight: var(--heading__font-weight__base, 600);
+  line-height: 1.1;
+  font-size: 18px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+h5 {
+  color: var(--heading__color__base, #000000);
+  font-family: var(--heading__font-family__base, false);
+  font-weight: var(--heading__font-weight__base, 600);
+  line-height: 1.1;
+  font-size: 16px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+h6 {
+  color: var(--heading__color__base, #000000);
+  font-family: var(--heading__font-family__base, false);
+  font-weight: var(--heading__font-weight__base, 600);
+  line-height: 1.1;
+  font-size: 14px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small,
+h1 .small,
+h2 .small,
+h3 .small,
+h4 .small,
+h5 .small,
+h6 .small {
+  color: #666666;
+  font-family: var(--font-family-name__base, 'Open Sans'), 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: var(--font-weight__regular, 400);
+  line-height: 1;
+  font-size: 14px;
+}
+a,
+.alink {
+  color: var(--link__color);
+  text-decoration: none;
+}
+a:visited,
+.alink:visited {
+  color: var(--link__color);
+  text-decoration: none;
+}
+a:hover,
+.alink:hover {
+  color: var(--link__hover__color);
+  text-decoration: none;
+}
+a:active,
+.alink:active {
+  color: #222222;
+  text-decoration: none;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+ul > li,
+ol > li {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-bottom: 0;
+}
+dl {
+  margin-bottom: 24px;
+  margin-top: 0;
+}
+dt {
+  font-weight: 700;
+  margin-bottom: 6px;
+  margin-top: 0;
+}
+dd {
+  margin-bottom: 12px;
+  margin-top: 0;
+  margin-left: 0;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+code {
+  background: #ffffff;
+  color: var(--heading__color__base, #000000);
+  padding: 2px 4px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+kbd {
+  background: #ffffff;
+  color: var(--heading__color__base, #000000);
+  padding: 2px 4px;
+  font-size: 12px;
+}
+pre {
+  background: #ffffff;
+  border: 1px solid var(--border-color__base, #eeeeee);
+  color: var(--heading__color__base, #000000);
+  line-height: 1.75;
+  margin: 0 0 12px;
+  padding: 12px;
+  font-size: 12px;
+  display: block;
+  word-wrap: break-word;
+}
+pre code {
+  background-color: transparent;
+  border-radius: 0;
+  color: inherit;
+  font-size: inherit;
+  padding: 0;
+  white-space: pre-wrap;
+}
+blockquote {
+  margin: 0;
+  padding: 2% 6%;
+  color: var(--text__color, #666666);
+  font-family: var(--font-family-name__base, 'Open Sans'), 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-weight: var(--font-weight__regular, 400);
+  line-height: 1.75;
+  font-size: 2rem;
+}
+blockquote p:last-child,
+blockquote ul:last-child,
+blockquote ol:last-child {
+  margin-bottom: 0;
+}
+blockquote footer,
+blockquote small,
+blockquote .small {
+  color: #666666;
+  line-height: 1.75;
+  font-size: 11px;
+  display: block;
+}
+blockquote footer:before,
+blockquote small:before,
+blockquote .small:before {
+  content: '“';
+}
+blockquote cite {
+  font-style: normal;
+}
+blockquote:before,
+blockquote:after {
+  content: '';
+}
+q {
+  quotes: none;
+}
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+cite {
+  font-style: normal;
+}
+body {
+  font-family: var(--font-family-name__base, 'Open Sans'), 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  text-align: left;
+}
+th,
+td {
+  font-family: var(--font-family-name__base, 'Open Sans'), 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+a {
+  color: var(--link__color);
+  text-decoration: none;
+}
+html,
+body {
+  background-color: #ffffff;
+}
+.wrapper {
+  margin: 0 auto;
+}
+.wrapper-inner {
+  padding-bottom: 36px;
+  width: 100%;
+}
+.main {
+  margin: 0 auto;
+  text-align: left;
+  width: 600px;
+}
+.header {
+  padding: 12px 12px 0;
+}
+.main-content {
+  background-color: #ffffff;
+  padding: 12px;
+}
+.footer {
+  padding: 0 12px 12px;
+}
+.button > tr > td {
+  padding-bottom: 12px;
+}
+.button .inner-wrapper td {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  background-color: var(--theme__color__primary, #56cfe1);
+}
+.button .inner-wrapper td a {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid var(--theme__color__primary, #56cfe1);
+  color: #ffffff;
+  display: inline-block;
+  font-size: 16px;
+  padding: 7px 15px;
+  text-decoration: none;
+}
+.message-info,
+.message-gift {
+  width: 100%;
+}
+.message-info td,
+.message-gift td {
+  background-color: #fdf0d5;
+  border: 1px solid false;
+  color: var(--text__color, #666666);
+  margin: 0;
+  padding: 12px;
+}
+.message-info td a,
+.message-gift td a {
+  color: var(--link__color);
+}
+.message-info td h1,
+.message-gift td h1,
+.message-info td h2,
+.message-gift td h2,
+.message-info td h3,
+.message-gift td h3,
+.message-info td h4,
+.message-gift td h4,
+.message-info td h5,
+.message-gift td h5,
+.message-info td h6,
+.message-gift td h6 {
+  margin-top: 0;
+}
+.message-details {
+  margin-bottom: 12px;
+}
+.message-details b {
+  font-weight: bold;
+}
+.message-details td {
+  padding-bottom: 6px;
+}
+.message-details td b {
+  margin-right: 12px;
+}
+.email-items .bundle-option-label > td {
+  padding: 0 12px 0 36px;
+}
+.email-items .bundle-option-value > td {
+  padding: 0 12px 12px;
+}
+.email-items .bundle-option-value > td.item-info {
+  padding: 0 12px 12px 48px;
+}
+.email-items tr.bundle-option-value + tr > td.item-extra {
+  padding-top: 12px;
+}
+.email-summary h1 {
+  margin-bottom: 6px;
+}
+.order-details {
+  width: 100%;
+}
+.order-details tr > .address-details,
+.order-details tr > .method-info {
+  padding: 12px 12px 12px 0;
+  width: 50%;
+}
+.order-details tr > .address-details h3,
+.order-details tr > .method-info h3 {
+  margin-top: 0;
+}
+.order-details tr + .method-info > td {
+  padding: 0 0 12px;
+}
+.order-details .payment-method {
+  margin-bottom: 12px;
+}
+.order-details .payment-method .title {
+  font-weight: var(--font-weight__regular, 400);
+}
+.order-details .payment-method .data.table > caption {
+  display: none;
+}
+.order-details .payment-method .data.table th {
+  padding-right: 12px;
+}
+.shipment-track {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  max-width: 100%;
+}
+.shipment-track th {
+  text-align: left;
+}
+.shipment-track > tbody > tr > th,
+.shipment-track > tfoot > tr > th,
+.shipment-track > tbody > tr > td,
+.shipment-track > tfoot > tr > td {
+  vertical-align: top;
+}
+.shipment-track > thead > tr > th,
+.shipment-track > thead > tr > td {
+  vertical-align: bottom;
+}
+.shipment-track > thead > tr > th,
+.shipment-track > tbody > tr > th,
+.shipment-track > tfoot > tr > th,
+.shipment-track > thead > tr > td,
+.shipment-track > tbody > tr > td,
+.shipment-track > tfoot > tr > td {
+  padding: 0 12px;
+}
+.shipment-track thead > tr > th,
+.shipment-track tbody > tr > th,
+.shipment-track thead > tr > td,
+.shipment-track tbody > tr > td {
+  background-color: #f2f2f2;
+  padding: 12px;
+  width: 50%;
+}
+.shipment-track thead > tr + tr th,
+.shipment-track tbody > tr + tr th,
+.shipment-track thead > tr + tr td,
+.shipment-track tbody > tr + tr td {
+  padding-top: 0;
+}
+.email-items {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  max-width: 100%;
+  border: 1px solid var(--border-color__base, #eeeeee);
+}
+.email-items th {
+  text-align: left;
+}
+.email-items > tbody > tr > th,
+.email-items > tfoot > tr > th,
+.email-items > tbody > tr > td,
+.email-items > tfoot > tr > td {
+  vertical-align: top;
+}
+.email-items > thead > tr > th,
+.email-items > thead > tr > td {
+  vertical-align: bottom;
+}
+.email-items > thead > tr > th,
+.email-items > tbody > tr > th,
+.email-items > tfoot > tr > th,
+.email-items > thead > tr > td,
+.email-items > tbody > tr > td,
+.email-items > tfoot > tr > td {
+  padding: 0 12px;
+}
+.email-items thead > tr > th,
+.email-items tfoot > tr > th,
+.email-items thead > tr > td,
+.email-items tfoot > tr > td {
+  background-color: #f2f2f2;
+}
+.email-items > thead > tr > th,
+.email-items > tbody > tr > th {
+  padding: 12px;
+}
+.email-items > thead > tr > td,
+.email-items > tbody > tr > td {
+  padding: 12px;
+}
+.email-items > thead > tr > td.message-gift,
+.email-items > tbody > tr > td.message-gift {
+  border-top: none;
+  padding-top: 0;
+}
+.email-items > tbody > tr > th,
+.email-items > tfoot > tr > th,
+.email-items > tbody > tr > td,
+.email-items > tfoot > tr > td {
+  border-top: 1px solid var(--border-color__base, #eeeeee);
+}
+.email-items > tbody > tr + tr > th,
+.email-items > tfoot > tr + tr > th,
+.email-items > tbody > tr + tr > td,
+.email-items > tfoot > tr + tr > td {
+  border-top: 0;
+}
+.email-items p {
+  margin-bottom: 0;
+}
+.email-items .product-name {
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.email-items .has-extra .sku {
+  margin-bottom: 12px;
+}
+.email-items .item-info dl {
+  margin-bottom: 0;
+  padding-left: 24px;
+}
+.email-items .item-info dl dt,
+.email-items .item-info dl dd {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.email-items .item-info dl dd {
+  padding-left: 12px;
+}
+.email-items .item-qty {
+  text-align: center;
+}
+.email-items .item-price,
+.email-items .item-subtotal {
+  text-align: right;
+}
+.email-items .item-extra {
+  padding-top: 0;
+}
+.email-items .order-totals > tr > th {
+  font-weight: var(--font-weight__regular, 400);
+}
+.email-items .order-totals > tr > th,
+.email-items .order-totals > tr > td {
+  padding: 12px;
+  text-align: right;
+}
+.email-items .order-totals > tr + tr th,
+.email-items .order-totals > tr + tr td {
+  padding-top: 0;
+}
+.email-items .order-totals .price {
+  white-space: nowrap;
+}

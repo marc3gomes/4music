@@ -1,0 +1,17 @@
+[23-10-2023 20:12:38] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.paypal.com/v1/oauth2/token
+[23-10-2023 20:12:39] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 401
+[23-10-2023 20:12:39] PayPal\Core\PayPalHttpConnection : ERROR: Got Http response code 401 when accessing https://api.paypal.com/v1/oauth2/token. {"error":"invalid_client","error_description":"Client Authentication failed"}
+[23-10-2023 20:14:14] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.paypal.com/v1/oauth2/token
+[23-10-2023 20:14:14] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[23-10-2023 20:14:14] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.paypal.com/v1/oauth2/token
+[23-10-2023 20:14:15] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[23-10-2023 20:14:15] PayPal\Core\PayPalHttpConnection : INFO: GET https://api.paypal.com/v1/notifications/webhooks?
+[23-10-2023 20:14:15] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[23-10-2023 20:14:15] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.paypal.com/v1/notifications/webhooks
+[23-10-2023 20:14:15] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 201
+[23-10-2023 20:14:41] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.paypal.com/v1/oauth2/token
+[23-10-2023 20:14:41] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[23-10-2023 20:14:41] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.paypal.com/v1/oauth2/token
+[23-10-2023 20:14:41] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[23-10-2023 20:14:41] PayPal\Core\PayPalHttpConnection : INFO: GET https://api.paypal.com/v1/notifications/webhooks?
+[23-10-2023 20:14:41] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
